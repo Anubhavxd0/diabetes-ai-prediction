@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Generated artifacts (recreated by running src/train.py)
+models/
+reports/
+*.pkl
+diabetes_model.pkl
+
+# Data cache (dataset is downloaded on run)
+data/*.csv
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
