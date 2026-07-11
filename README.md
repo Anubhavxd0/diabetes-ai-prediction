@@ -117,7 +117,9 @@ streamlit run app.py
 ```
 The demo can be deployed for free on
 [Streamlit Community Cloud](https://streamlit.io/cloud) and linked from a portfolio
-or LinkedIn "Featured" section.
+or LinkedIn "Featured" section. See **[DEPLOY.md](DEPLOY.md)** for a step-by-step
+guide. (No model file needs to be committed — the app trains itself once on first
+boot.)
 
 ---
 

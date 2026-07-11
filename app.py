@@ -26,11 +26,34 @@ st.caption(
     "Educational use only — not a medical diagnosis."
 )
 
-if not os.path.exists(MODEL_PATH):
-    st.error("No trained model found. Run `python src/train.py` first, then reload.")
+
+@st.cache_resource(show_spinner="Preparing model (first run only)…")
+def get_artifact():
+    """Load the trained pipeline, training it once if it is not present yet.
+
+    On a fresh deploy (e.g. Streamlit Community Cloud) the ``models/`` directory
+    is not committed to git, so no artifact exists on first boot. Rather than
+    ask a visitor to run a script, we train the model once on startup — it takes
+    only a few seconds on this small dataset — and cache it for the container's
+    lifetime. Training in the live environment also avoids any pickle/scikit-learn
+    version mismatch that shipping a pre-built ``.joblib`` could cause.
+    """
+    if not os.path.exists(MODEL_PATH):
+        import train  # local module in src/ (added to sys.path above)
+
+        train.main()
+    return load_model()
+
+
+try:
+    artifact = get_artifact()
+except Exception as exc:  # pragma: no cover - surfaced in the UI
+    st.error(
+        "Could not prepare the model. This usually means the dataset could not be "
+        f"downloaded on first run.\n\nDetails: `{exc}`"
+    )
     st.stop()
 
-artifact = load_model()
 st.caption(f"Model in use: **{artifact.get('model_name', 'unknown')}**")
 
 st.subheader("Enter patient measurements")
