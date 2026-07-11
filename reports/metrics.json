@@ -1,0 +1,78 @@
+{
+  "best_model": "Logistic Regression",
+  "cross_validation": [
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.7622,
+      "accuracy_std": 0.0111,
+      "precision": 0.6486,
+      "precision_std": 0.0263,
+      "recall": 0.701,
+      "recall_std": 0.0395,
+      "f1": 0.6724,
+      "f1_std": 0.0133,
+      "roc_auc": 0.8444,
+      "roc_auc_std": 0.0161
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.7606,
+      "accuracy_std": 0.0169,
+      "precision": 0.6343,
+      "precision_std": 0.0301,
+      "recall": 0.7476,
+      "recall_std": 0.0179,
+      "f1": 0.6855,
+      "f1_std": 0.0122,
+      "roc_auc": 0.8381,
+      "roc_auc_std": 0.0234
+    },
+    {
+      "model": "Gradient Boosting",
+      "accuracy": 0.7557,
+      "accuracy_std": 0.018,
+      "precision": 0.6721,
+      "precision_std": 0.0508,
+      "recall": 0.5981,
+      "recall_std": 0.0308,
+      "f1": 0.6308,
+      "f1_std": 0.0134,
+      "roc_auc": 0.8205,
+      "roc_auc_std": 0.0154
+    }
+  ],
+  "test_set": {
+    "accuracy": 0.7337662337662337,
+    "precision": 0.6031746031746031,
+    "recall": 0.7037037037037037,
+    "f1": 0.6495726495726496,
+    "roc_auc": 0.8125925925925926
+  },
+  "test_classification_report": {
+    "No Diabetes": {
+      "precision": 0.8241758241758241,
+      "recall": 0.75,
+      "f1-score": 0.7853403141361257,
+      "support": 100.0
+    },
+    "Diabetes": {
+      "precision": 0.6031746031746031,
+      "recall": 0.7037037037037037,
+      "f1-score": 0.6495726495726496,
+      "support": 54.0
+    },
+    "accuracy": 0.7337662337662337,
+    "macro avg": {
+      "precision": 0.7136752136752136,
+      "recall": 0.7268518518518519,
+      "f1-score": 0.7174564818543876,
+      "support": 154.0
+    },
+    "weighted avg": {
+      "precision": 0.7466818895390324,
+      "recall": 0.7337662337662337,
+      "f1-score": 0.737733470717764,
+      "support": 154.0
+    }
+  }
+}
