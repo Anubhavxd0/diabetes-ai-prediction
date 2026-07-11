@@ -3,8 +3,8 @@
 A machine-learning model that estimates **diabetes risk from routine clinical lab
 values**, built on the Pima Indians Diabetes dataset (768 patients, 8 features).
 
-**Author:** Anubhav Rai — BSc Medical Laboratory Technology (MLT) + physical sciences
-**Goal:** a small but *methodologically honest* clinical ML project, not just a high
+**Author:** Anubhav Rai
+**Goal:** a small test model *methodologically honest* clinical ML project, not just a high
 accuracy number.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Anubhavxd0/diabetes-ai-prediction/blob/main/diabetes_prediction.ipynb)
