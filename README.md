@@ -8,6 +8,9 @@ values**, built on the Pima Indians Diabetes dataset (768 patients, 8 features).
 accuracy number.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Anubhavxd0/diabetes-ai-prediction/blob/main/diabetes_prediction.ipynb)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://diabetes-ai-prediction.streamlit.app/)
+
+**🔗 Live demo:** https://diabetes-ai-prediction.streamlit.app/
 
 > ⚕️ **Disclaimer:** This is an educational project, **not a medical device**. It
 > must not be used to diagnose, treat, or make decisions about any real person.
