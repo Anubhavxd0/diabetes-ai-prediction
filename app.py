@@ -4,7 +4,7 @@ Run locally:
     streamlit run app.py
 
 Or deploy for free on Streamlit Community Cloud so it can be linked from a
-portfolio / LinkedIn "Featured" section.
+portfolio or personal site.
 
 NOTE: This is an educational screening demo, not a diagnostic tool.
 """

@@ -1,7 +1,7 @@
 # Deploying the demo on Streamlit Community Cloud
 
 This guide puts the interactive risk-screening demo (`app.py`) online for free so it
-can be linked from a portfolio or a LinkedIn **Featured** section.
+can be linked from a portfolio or personal site.
 
 > ⚕️ Reminder: this is an **educational screening demo, not a medical device**. Keep
 > the disclaimer visible wherever you share it.
@@ -57,7 +57,7 @@ Cloud at `app.py`.
    Subsequent loads are instant.
 
 6. **Grab the URL.** You'll get a public link like
-   `https://<your-app-name>.streamlit.app`. That's the link for LinkedIn.
+   `https://<your-app-name>.streamlit.app`. That's the public link for your portfolio.
 
 ---
 
